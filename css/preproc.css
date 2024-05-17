@@ -4,6 +4,12 @@
   margin: 0;
   box-sizing: border-box; }
 
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff"), url("../fonts/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/roboto-regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 .preloader {
   /*фиксированное позиционирование*/
   position: fixed;
@@ -59,9 +65,218 @@
   display: none; }
 
 .container {
-  padding: 50px 60px 30px 60px;
-  max-width: 1440px;
-  max-height: 146px;
-  background: #323264;
+  max-width: 1200px;
+  max-height: 60px;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
   margin: auto;
-  display: flex; }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 29px 19px 24px; }
+  .container img {
+    display: flex;
+    padding-right: 29px; }
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  max-height: 20px; }
+  .about ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none; }
+    .about ul li {
+      display: flex;
+      justify-content: space-between; }
+      .about ul li a {
+        display: flex;
+        text-decoration: none;
+        padding-right: 38px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #212121;
+        font-family: 'robotoregular'; }
+      .about ul li img {
+        display: flex;
+        padding-right: 38px; }
+      .about ul li .solutions {
+        padding-right: 8px; }
+      .about ul li .products {
+        padding-right: 8px; }
+      .about ul li .resources {
+        padding-right: 8px; }
+      .about ul li .group {
+        padding-right: 77px; }
+
+.email {
+  display: flex;
+  justify-content: space-between;
+  min-height: 20px; }
+  .email ul {
+    display: flex;
+    list-style: none;
+    align-items: center; }
+  .email a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.01em;
+    color: #212121;
+    font-family: 'robotoregular'; }
+  .email .contact {
+    padding-right: 26px;
+    padding-left: 26px; }
+  .email .open {
+    padding-left: 26px;
+    padding-right: 26px; }
+  .email .sign {
+    padding-left: 26px;
+    padding-right: 26px; }
+  .email .sales {
+    border-radius: 10px;
+    height: 36px;
+    align-items: center; }
+    .email .sales:hover {
+      background: #f46a35;
+      border: 1px solid #f46a35; }
+  .email li {
+    display: flex;
+    border-radius: 10px;
+    height: 36px;
+    align-items: center; }
+    .email li:hover {
+      background: #f46a35;
+      border: 1px solid #f46a35; }
+
+main section {
+  max-width: 1200px;
+  min-height: 740px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto; }
+  main section .brexfor {
+    max-width: 600px;
+    min-height: 740px;
+    display: flex;
+    padding-left: 48px;
+    padding-top: 76px;
+    background: #fff;
+    flex-direction: column; }
+    main section .brexfor h3 {
+      max-width: 494px;
+      min-height: 156px;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 130%;
+      letter-spacing: 0.04em;
+      color: #212121;
+      font-family: 'robotoregular';
+      margin-bottom: 23px;
+      margin-right: 66px; }
+    main section .brexfor h4 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 125%;
+      letter-spacing: 0.02em;
+      color: #212121;
+      font-family: 'robotoregular';
+      display: inline-block;
+      max-width: 456px;
+      min-height: 20px;
+      margin-bottom: 9px; }
+      main section .brexfor h4:after {
+        min-width: 504px;
+        height: 1px;
+        content: "";
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: flex;
+        position: relative;
+        left: 0px;
+        top: -55px; }
+  main section p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.02em;
+    color: #212121;
+    font-family: 'robotoregular';
+    display: flex;
+    max-width: 456px;
+    min-height: 40px;
+    margin-bottom: 7px; }
+  main section .enterprice {
+    display: flex;
+    flex-direction: column; }
+    main section .enterprice a {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #f46a35;
+      padding-right: 4px;
+      text-decoration: none;
+      margin-bottom: 65px;
+      font-family: 'robotoregular'; }
+    main section .enterprice img {
+      margin-left: 4px; }
+  main section .startups {
+    display: flex;
+    flex-direction: column; }
+    main section .startups a {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #f46a35;
+      padding-right: 4px;
+      text-decoration: none;
+      font-family: 'robotoregular'; }
+    main section .startups img {
+      margin-left: 4px; }
+  main section .budgets {
+    min-width: 600px;
+    min-height: 740px;
+    display: flex;
+    background-image: url("/images/IMAGE.svg");
+    background-repeat: no-repeat; }
+  main section .open {
+    max-width: 330px;
+    min-height: 48px;
+    display: flex;
+    justify-content: space-between; }
+    main section .open a {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      width: 160px;
+      height: 48px;
+      text-decoration: none;
+      align-items: center;
+      display: flex;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 157%;
+      color: #212121;
+      font-family: 'robotoregular'; }
+      main section .open a:hover {
+        border: 1px solid #f46a35;
+        background: #f46a35;
+        color: #fff; }
+    main section .open .contact {
+      padding-left: 32px;
+      padding-right: 32px;
+      margin-bottom: 97px; }
+    main section .open .account {
+      padding-left: 22px;
+      padding-right: 21px; }
+
+main section .carusel {
+  max-width: 1200px;
+  min-height: 152px;
+  display: flex;
+  align-items: center;
+  padding-top: 80px; }
+  main section .carusel a {
+    min-height: 24px; }
