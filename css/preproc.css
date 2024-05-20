@@ -287,3 +287,38 @@ main section .carusel {
 .owl-carousel.owl-drag .owl-item {
   display: grid;
   place-items: center; }
+
+.owl-dots {
+  text-align: center;
+  margin-bottom: 100px; }
+  .owl-dots .owl-dot span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3d3d3d;
+    margin: 10px; }
+  .owl-dots .owl-dot.active span {
+    background-color: #46A358; }
+
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+  display: block; }
+
+.owl-nav .owl-prev span {
+  width: 20px;
+  height: 20px;
+  background: bisque;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  top: 83px; }
+
+.owl-nav .owl-next span {
+  width: 20px;
+  height: 20px;
+  background: bisque;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  top: 83px;
+  right: 0; }
