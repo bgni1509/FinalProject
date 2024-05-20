@@ -143,7 +143,8 @@
     align-items: center; }
     .email .sales:hover {
       background: #f46a35;
-      border: 1px solid #f46a35; }
+      border: 1px solid #f46a35;
+      color: #fff; }
   .email li {
     display: flex;
     border-radius: 10px;
@@ -152,6 +153,8 @@
     .email li:hover {
       background: #f46a35;
       border: 1px solid #f46a35; }
+      .email li:hover a {
+        color: #fff; }
 
 main section {
   max-width: 1200px;
@@ -280,3 +283,7 @@ main section .carusel {
   padding-top: 80px; }
   main section .carusel a {
     min-height: 24px; }
+
+.owl-carousel.owl-drag .owl-item {
+  display: grid;
+  place-items: center; }
