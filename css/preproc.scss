@@ -1042,8 +1042,11 @@ footer{
       }
     }
   }
+  .logo{
+    margin-left: 48px;
+  }
   .product{
-    margin-left: 324px;
+    margin-left: 198px;
   }
   .company{
     margin-left: 142px;
@@ -1052,7 +1055,15 @@ footer{
     margin-left: 203px;
   }
 }
-
+footer .second_footer{
+  display: flex;
+  margin-left: 48px;
+  .link2{
+    margin-left: 352px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 
 

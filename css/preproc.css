@@ -830,9 +830,19 @@ footer {
       list-style: none; }
       footer .top_footer li a {
         text-decoration: none; }
+  footer .logo {
+    margin-left: 48px; }
   footer .product {
-    margin-left: 324px; }
+    margin-left: 198px; }
   footer .company {
     margin-left: 142px; }
   footer .resources {
     margin-left: 203px; }
+
+footer .second_footer {
+  display: flex;
+  margin-left: 48px; }
+  footer .second_footer .link2 {
+    margin-left: 352px;
+    display: flex;
+    justify-content: space-between; }
