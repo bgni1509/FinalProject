@@ -216,29 +216,37 @@ main section {
     display: flex;
     flex-direction: column; }
     main section .enterprice a {
+      max-width: 106px;
       font-weight: 400;
       font-size: 16px;
       line-height: 150%;
-      color: #f46a35;
-      padding-right: 4px;
+      color: #212121;
       text-decoration: none;
       margin-bottom: 65px;
       font-family: 'robotoregular'; }
-    main section .enterprice img {
-      margin-left: 4px; }
+      main section .enterprice a:hover {
+        color: #f46a35; }
+        main section .enterprice a:hover path {
+          fill: #f46a35; }
+    main section .enterprice svg {
+      margin-left: 8px; }
   main section .startups {
     display: flex;
     flex-direction: column; }
     main section .startups a {
+      max-width: 106px;
       font-weight: 400;
       font-size: 16px;
       line-height: 150%;
-      color: #f46a35;
-      padding-right: 4px;
+      color: #212121;
       text-decoration: none;
       font-family: 'robotoregular'; }
-    main section .startups img {
-      margin-left: 4px; }
+      main section .startups a svg {
+        margin-left: 8px; }
+      main section .startups a:hover {
+        color: #f46a35; }
+        main section .startups a:hover path {
+          fill: #f46a35; }
   main section .budgets {
     min-width: 600px;
     min-height: 740px;
@@ -595,3 +603,167 @@ main section .cards .corporate .meets {
 
 .carousel-container img {
   width: inherit; }
+
+main section .customers {
+  min-width: 1200px;
+  min-height: 208px;
+  background: #fff;
+  justify-content: center;
+  display: flex;
+  text-align: center; }
+  main section .customers h1 {
+    padding-top: 25px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #212121;
+    font-family: 'robotoregular'; }
+
+main section .cardgoods {
+  min-width: 1200px;
+  min-height: 340px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between; }
+  main section .cardgoods .empire {
+    max-width: 325px;
+    max-height: 340px;
+    margin-left: 48px; }
+    main section .cardgoods .empire img {
+      margin-bottom: 26px; }
+    main section .cardgoods .empire a {
+      max-width: 125px;
+      min-height: 24px;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #212121;
+      font-family: 'robotoregular'; }
+      main section .cardgoods .empire a:hover {
+        color: #f46a35; }
+        main section .cardgoods .empire a:hover path {
+          fill: #f46a35; }
+      main section .cardgoods .empire a svg {
+        margin-bottom: inherit;
+        margin-left: 8px; }
+    main section .cardgoods .empire p {
+      max-width: 306px;
+      min-height: 84px;
+      margin-bottom: 22px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      color: #212121;
+      font-family: 'robotoregular'; }
+  main section .cardgoods .scale {
+    max-width: 321px;
+    max-height: 340px; }
+    main section .cardgoods .scale img {
+      margin-bottom: 26px; }
+    main section .cardgoods .scale a {
+      max-width: 125px;
+      min-height: 24px;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #212121;
+      font-family: 'robotoregular'; }
+      main section .cardgoods .scale a:hover {
+        color: #f46a35; }
+        main section .cardgoods .scale a:hover path {
+          fill: #f46a35; }
+      main section .cardgoods .scale a svg {
+        margin-bottom: inherit;
+        margin-left: 8px; }
+    main section .cardgoods .scale p {
+      max-width: 321px;
+      min-height: 84px;
+      margin-bottom: 22px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      color: #212121;
+      font-family: 'robotoregular'; }
+  main section .cardgoods .avenue {
+    max-width: 325px;
+    max-height: 340px;
+    margin-right: 48px; }
+    main section .cardgoods .avenue img {
+      margin-bottom: 26px; }
+    main section .cardgoods .avenue a {
+      max-width: 125px;
+      min-height: 24px;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #212121;
+      font-family: 'robotoregular'; }
+      main section .cardgoods .avenue a:hover {
+        color: #f46a35; }
+        main section .cardgoods .avenue a:hover path {
+          fill: #f46a35; }
+      main section .cardgoods .avenue a svg {
+        margin-bottom: inherit;
+        margin-left: 8px; }
+    main section .cardgoods .avenue p {
+      max-width: 325px;
+      min-height: 84px;
+      margin-bottom: 22px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      color: #212121;
+      font-family: 'robotoregular'; }
+
+main section .brends {
+  min-width: 1200px;
+  min-height: 442px;
+  background: #fff;
+  display: flex;
+  padding-top: 81px; }
+  main section .brends .tc {
+    min-width: 275px;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    margin-left: 49px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding-left: 29px;
+    border-radius: 4px 0 0 4px; }
+    main section .brends .tc img {
+      width: 217px;
+      height: 50px; }
+  main section .brends .ny {
+    min-width: 275px;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(33, 33, 33, 0.2);
+    border-bottom: 1px solid rgba(33, 33, 33, 0.2); }
+    main section .brends .ny img {
+      width: 217px;
+      height: 50px;
+      margin-left: 29px; }
+  main section .brends .zdforbs {
+    min-width: 550px;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 0 4px 4px 0; }
+    main section .brends .zdforbs .zd {
+      width: 75px;
+      height: 50px;
+      margin-left: 99px; }
+    main section .brends .zdforbs .forbs {
+      width: 110px;
+      height: 50px;
+      margin-left: 183px; }
