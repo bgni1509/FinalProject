@@ -81,8 +81,14 @@
   padding: 21px 29px 19px 24px;
   img{
     display: flex;
-    padding-right: 29px;
-
+  }
+  a{
+    &:hover{
+      img{
+        transform: rotate(360deg);
+        transition: 1s;
+      }
+    }
 
   }
 }
@@ -100,10 +106,17 @@
     li {
       display: flex;
       justify-content: space-between;
+      &:nth-child(3){
+        margin-right: 29px;
+
+      }
+      &:nth-child(4){
+        margin-right: 29px;
+
+      }
       a {
         display: flex;
         text-decoration: none;
-        padding-right: 38px;
         font-weight: 400;
         font-size: 14px;
         line-height: 143%;
@@ -111,22 +124,32 @@
         text-align: center;
         color: #212121;
         font-family: 'robotoregular';
+
       }
       img{
         display: flex;
-        padding-right: 38px;
+
       }
       .solutions{
-        padding-right: 8px;
+        max-width: 82px;
+        margin-right: 29px;
+        img{
+          margin-left: 8px;
+
+
+        }
       }
       .products{
-        padding-right: 8px;
+        margin-right: 29px;
+        img{
+          margin-left: 8px;
+        }
       }
       .resources{
-        padding-right: 8px;
-      }
-      .group{
-        padding-right: 77px;
+        margin-right: 124px;
+        img{
+          margin-left: 8px;
+        }
       }
 
     }
@@ -194,9 +217,9 @@
       }
 }
 main {
-  section {
+  .banner {
     max-width: 1200px;
-    min-height: 740px;
+    //min-height: 740px;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
@@ -372,6 +395,34 @@ main {
 
     }
   }
+}
+.workfor{
+  max-width: 1200px;
+  margin: auto;
+}
+.use{
+  max-width: 1200px;
+  margin: auto;
+}
+.forany{
+  max-width: 1200px;
+  margin: auto;
+}
+.my-carousel{
+  max-width: 1200px;
+  margin: auto;
+}
+.power{
+  max-width: 1200px;
+  margin: auto;
+}
+.goodscard{
+  max-width: 1200px;
+  margin: auto;
+}
+.our-brends{
+  max-width: 1200px;
+  margin: auto;
 }
 main section .carusel{
   max-width: 1200px;
@@ -589,7 +640,7 @@ main section .cards .corporate .meets{
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  min-width: 476px;
+  max-width: 476px;
   font-family: 'robotoregular';
   margin-bottom: 22px;
 }
@@ -642,6 +693,11 @@ main section .cards .corporate .meets{
       text-decoration: none;
       font-family: 'robotoregular';
       margin-bottom: 40px;
+      &:hover{
+        border: 1px solid #f46a35;
+        background: #f46a35;
+        color: #fff;
+      }
     }
 
   }
@@ -968,8 +1024,9 @@ main section .brends{
   }
 }
 main .see{
-  min-width: 1200px;
+  max-width: 1200px;
   min-height: 515px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -1013,6 +1070,31 @@ main .see{
       line-height: 157%;
       color: #212121;
       text-decoration: none;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      font-family: 'robotoregular';
+      &:hover{
+        border: 1px solid #f46a35;
+        background: #f46a35;
+        color: #fff;
+      }
+
+    }
+    .open{
+      max-width: 330px;
+      min-height: 48px;
+      display: flex;
+      justify-content: space-between;
+      .contact{
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-bottom: 97px;
+      }
+      .account{
+        padding-left: 22px;
+        padding-right: 21px;
+      }
     }
   }
   img{
@@ -1077,6 +1159,7 @@ footer{
       letter-spacing: 0.02em;
       color: #fff;
       font-family: 'robotoregular';
+      margin-bottom: 7px;
     }
     a{
       font-weight: 400;
@@ -1098,6 +1181,7 @@ footer{
       letter-spacing: 0.02em;
       color: #fff;
       font-family: 'robotoregular';
+      margin-bottom: 7px;
     }
     a{
       font-weight: 400;

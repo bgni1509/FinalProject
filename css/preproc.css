@@ -75,8 +75,10 @@
   align-items: center;
   padding: 21px 29px 19px 24px; }
   .container img {
-    display: flex;
-    padding-right: 29px; }
+    display: flex; }
+  .container a:hover img {
+    transform: rotate(360deg);
+    transition: 1s; }
 
 .about {
   display: flex;
@@ -89,10 +91,13 @@
     .about ul li {
       display: flex;
       justify-content: space-between; }
+      .about ul li:nth-child(3) {
+        margin-right: 29px; }
+      .about ul li:nth-child(4) {
+        margin-right: 29px; }
       .about ul li a {
         display: flex;
         text-decoration: none;
-        padding-right: 38px;
         font-weight: 400;
         font-size: 14px;
         line-height: 143%;
@@ -101,16 +106,20 @@
         color: #212121;
         font-family: 'robotoregular'; }
       .about ul li img {
-        display: flex;
-        padding-right: 38px; }
+        display: flex; }
       .about ul li .solutions {
-        padding-right: 8px; }
+        max-width: 82px;
+        margin-right: 29px; }
+        .about ul li .solutions img {
+          margin-left: 8px; }
       .about ul li .products {
-        padding-right: 8px; }
+        margin-right: 29px; }
+        .about ul li .products img {
+          margin-left: 8px; }
       .about ul li .resources {
-        padding-right: 8px; }
-      .about ul li .group {
-        padding-right: 77px; }
+        margin-right: 124px; }
+        .about ul li .resources img {
+          margin-left: 8px; }
 
 .email {
   display: flex;
@@ -156,13 +165,12 @@
       .email li:hover a {
         color: #fff; }
 
-main section {
+main .banner {
   max-width: 1200px;
-  min-height: 740px;
   display: flex;
   flex-wrap: wrap;
   margin: auto; }
-  main section .brexfor {
+  main .banner .brexfor {
     max-width: 600px;
     min-height: 740px;
     display: flex;
@@ -170,7 +178,7 @@ main section {
     padding-top: 76px;
     background: #fff;
     flex-direction: column; }
-    main section .brexfor h3 {
+    main .banner .brexfor h3 {
       max-width: 494px;
       min-height: 156px;
       font-weight: 400;
@@ -181,7 +189,7 @@ main section {
       font-family: 'robotoregular';
       margin-bottom: 23px;
       margin-right: 66px; }
-    main section .brexfor h4 {
+    main .banner .brexfor h4 {
       font-weight: 400;
       font-size: 16px;
       line-height: 125%;
@@ -192,7 +200,7 @@ main section {
       max-width: 456px;
       min-height: 20px;
       margin-bottom: 9px; }
-      main section .brexfor h4:after {
+      main .banner .brexfor h4:after {
         min-width: 504px;
         height: 1px;
         content: "";
@@ -201,7 +209,7 @@ main section {
         position: relative;
         left: 0px;
         top: -55px; }
-  main section p {
+  main .banner p {
     font-weight: 400;
     font-size: 14px;
     line-height: 143%;
@@ -212,10 +220,10 @@ main section {
     max-width: 456px;
     min-height: 40px;
     margin-bottom: 7px; }
-  main section .enterprice {
+  main .banner .enterprice {
     display: flex;
     flex-direction: column; }
-    main section .enterprice a {
+    main .banner .enterprice a {
       max-width: 106px;
       font-weight: 400;
       font-size: 16px;
@@ -224,16 +232,16 @@ main section {
       text-decoration: none;
       margin-bottom: 65px;
       font-family: 'robotoregular'; }
-      main section .enterprice a:hover {
+      main .banner .enterprice a:hover {
         color: #f46a35; }
-        main section .enterprice a:hover path {
+        main .banner .enterprice a:hover path {
           fill: #f46a35; }
-    main section .enterprice svg {
+    main .banner .enterprice svg {
       margin-left: 8px; }
-  main section .startups {
+  main .banner .startups {
     display: flex;
     flex-direction: column; }
-    main section .startups a {
+    main .banner .startups a {
       max-width: 106px;
       font-weight: 400;
       font-size: 16px;
@@ -241,24 +249,24 @@ main section {
       color: #212121;
       text-decoration: none;
       font-family: 'robotoregular'; }
-      main section .startups a svg {
+      main .banner .startups a svg {
         margin-left: 8px; }
-      main section .startups a:hover {
+      main .banner .startups a:hover {
         color: #f46a35; }
-        main section .startups a:hover path {
+        main .banner .startups a:hover path {
           fill: #f46a35; }
-  main section .budgets {
+  main .banner .budgets {
     min-width: 600px;
     min-height: 740px;
     display: flex;
     background-image: url("../images/IMAGE.svg");
     background-repeat: no-repeat; }
-  main section .open {
+  main .banner .open {
     max-width: 330px;
     min-height: 48px;
     display: flex;
     justify-content: space-between; }
-    main section .open a {
+    main .banner .open a {
       border: 1px solid rgba(0, 0, 0, 0.1);
       border-radius: 10px;
       width: 160px;
@@ -271,17 +279,45 @@ main section {
       line-height: 157%;
       color: #212121;
       font-family: 'robotoregular'; }
-      main section .open a:hover {
+      main .banner .open a:hover {
         border: 1px solid #f46a35;
         background: #f46a35;
         color: #fff; }
-    main section .open .contact {
+    main .banner .open .contact {
       padding-left: 32px;
       padding-right: 32px;
       margin-bottom: 97px; }
-    main section .open .account {
+    main .banner .open .account {
       padding-left: 22px;
       padding-right: 21px; }
+
+.workfor {
+  max-width: 1200px;
+  margin: auto; }
+
+.use {
+  max-width: 1200px;
+  margin: auto; }
+
+.forany {
+  max-width: 1200px;
+  margin: auto; }
+
+.my-carousel {
+  max-width: 1200px;
+  margin: auto; }
+
+.power {
+  max-width: 1200px;
+  margin: auto; }
+
+.goodscard {
+  max-width: 1200px;
+  margin: auto; }
+
+.our-brends {
+  max-width: 1200px;
+  margin: auto; }
 
 main section .carusel {
   max-width: 1200px;
@@ -455,7 +491,7 @@ main section .cards .corporate .meets {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  min-width: 476px;
+  max-width: 476px;
   font-family: 'robotoregular';
   margin-bottom: 22px; }
 
@@ -506,6 +542,10 @@ main section .cards .corporate .meets {
       text-decoration: none;
       font-family: 'robotoregular';
       margin-bottom: 40px; }
+      .flexible .limits a:hover {
+        border: 1px solid #f46a35;
+        background: #f46a35;
+        color: #fff; }
   .flexible img {
     max-width: 1104px;
     min-height: 621px;
@@ -769,8 +809,9 @@ main section .brends {
       margin-left: 183px; }
 
 main .see {
-  min-width: 1200px;
+  max-width: 1200px;
   min-height: 515px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -809,7 +850,27 @@ main .see {
       font-size: 14px;
       line-height: 157%;
       color: #212121;
-      text-decoration: none; }
+      text-decoration: none;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      font-family: 'robotoregular'; }
+      main .see .touch a:hover {
+        border: 1px solid #f46a35;
+        background: #f46a35;
+        color: #fff; }
+    main .see .touch .open {
+      max-width: 330px;
+      min-height: 48px;
+      display: flex;
+      justify-content: space-between; }
+      main .see .touch .open .contact {
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-bottom: 97px; }
+      main .see .touch .open .account {
+        padding-left: 22px;
+        padding-right: 21px; }
   main .see img {
     min-width: 552px;
     max-height: 451px;
@@ -860,7 +921,8 @@ footer {
       line-height: 150%;
       letter-spacing: 0.02em;
       color: #fff;
-      font-family: 'robotoregular'; }
+      font-family: 'robotoregular';
+      margin-bottom: 7px; }
     footer .company a {
       font-weight: 400;
       font-size: 14px;
@@ -877,7 +939,8 @@ footer {
       line-height: 150%;
       letter-spacing: 0.02em;
       color: #fff;
-      font-family: 'robotoregular'; }
+      font-family: 'robotoregular';
+      margin-bottom: 7px; }
     footer .resources a {
       font-weight: 400;
       font-size: 14px;
