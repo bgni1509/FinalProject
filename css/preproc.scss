@@ -1031,9 +1031,10 @@ footer{
   flex-direction: column;
   margin: auto;
   padding-top: 120px;
-  //background: #171717;
+  background: #171717;
   .top_footer{
     display: flex;
+    margin-bottom: 97px;
 
     li{
       list-style: none;
@@ -1047,21 +1048,129 @@ footer{
   }
   .product{
     margin-left: 198px;
+    h2{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      color: #fff;
+      font-family: 'robotoregular';
+      margin-bottom: 7px;
+    }
+    a{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 157%;
+      color: #bcbdbd;
+      font-family: 'robotoregular';
+    }
+    li{
+      margin-bottom: 8px;
+    }
   }
   .company{
     margin-left: 142px;
+    h2{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      color: #fff;
+      font-family: 'robotoregular';
+    }
+    a{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 157%;
+      color: #bcbdbd;
+      font-family: 'robotoregular';
+    }
+    li{
+      margin-bottom: 8px;
+    }
   }
   .resources{
     margin-left: 203px;
+    h2{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      color: #fff;
+      font-family: 'robotoregular';
+    }
+    a{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 157%;
+      color: #bcbdbd;
+      font-family: 'robotoregular';
+    }
+    li{
+      margin-bottom: 8px;
+    }
   }
 }
 footer .second_footer{
   display: flex;
   margin-left: 48px;
+  margin-bottom: 131px;
   .link2{
     margin-left: 352px;
     display: flex;
     justify-content: space-between;
+    max-width: 186px;
+    min-height: 24px;
+    .app{
+      display: flex;
+      margin-right: 24px;
+    }
+    .google{
+      display: flex;
+    }
+  }
+  .link{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+    a{
+      margin-right: 24px;
+      &:last-of-type{
+        margin-right: 0px;
+      }
+    }
+
+  }
+}
+footer .bottom_footer{
+  display: flex;
+  margin-left: 48px;
+  flex-direction: column;
+  a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    letter-spacing: 0.02em;
+    color: #bcbdbd;
+    font-family: 'robotoregular';
+  }
+  p{
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    letter-spacing: 0.02em;
+    color: #bcbdbd;
+    font-family: 'robotoregular';
+    &:last-of-type{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 133%;
+      letter-spacing: 0.02em;
+      color: #fff;
+    }
   }
 }
 
