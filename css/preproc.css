@@ -76,7 +76,7 @@
   padding: 21px 29px 19px 24px; }
   .container img {
     display: flex; }
-  .container a:hover img {
+  .container .logogo:hover {
     transform: rotate(360deg);
     transition: 1s; }
 
@@ -129,14 +129,16 @@
     display: flex;
     list-style: none;
     align-items: center; }
-  .email a {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 143%;
-    letter-spacing: 0.01em;
-    color: #212121;
-    font-family: 'robotoregular'; }
+    .email ul li:hover span {
+      transform: scale(2); }
+    .email ul a {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 143%;
+      letter-spacing: 0.01em;
+      color: #212121;
+      font-family: 'robotoregular'; }
   .email .contact {
     padding-right: 26px;
     padding-left: 26px; }
