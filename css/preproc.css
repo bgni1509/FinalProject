@@ -129,43 +129,46 @@
     display: flex;
     list-style: none;
     align-items: center; }
-    .email ul li:hover span {
-      transform: scale(2); }
-    .email ul a {
-      text-decoration: none;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 143%;
-      letter-spacing: 0.01em;
-      color: #212121;
-      font-family: 'robotoregular'; }
-  .email .contact {
-    padding-right: 26px;
-    padding-left: 26px; }
-  .email .open {
-    padding-left: 26px;
-    padding-right: 26px; }
-  .email .sign {
-    padding-left: 26px;
-    padding-right: 26px; }
-  .email .sales {
-    border-radius: 10px;
-    height: 36px;
-    align-items: center; }
-    .email .sales:hover {
-      background: #f46a35;
-      border: 1px solid #f46a35;
+  .email a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.01em;
+    color: #212121;
+    font-family: 'robotoregular'; }
+
+.contact {
+  padding-right: 26px;
+  padding-left: 26px; }
+
+.open {
+  padding-left: 26px;
+  padding-right: 26px; }
+
+.sign {
+  padding-left: 26px;
+  padding-right: 26px; }
+
+.sales {
+  border-radius: 10px;
+  height: 36px;
+  align-items: center; }
+  .sales:hover {
+    background: #f46a35;
+    border: 1px solid #f46a35;
+    color: #fff; }
+
+li {
+  display: flex;
+  border-radius: 10px;
+  height: 36px;
+  align-items: center; }
+  li:hover {
+    background: #f46a35;
+    border: 1px solid #f46a35; }
+    li:hover a {
       color: #fff; }
-  .email li {
-    display: flex;
-    border-radius: 10px;
-    height: 36px;
-    align-items: center; }
-    .email li:hover {
-      background: #f46a35;
-      border: 1px solid #f46a35; }
-      .email li:hover a {
-        color: #fff; }
 
 main .banner {
   max-width: 1200px;
