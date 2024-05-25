@@ -974,7 +974,7 @@ footer {
         footer section .second_footer .link a {
           margin-right: 24px; }
           footer section .second_footer .link a:last-of-type {
-            margin-right: 0px; }
+            margin-right: 0; }
     footer section .bottom_footer {
       display: flex;
       margin-left: 48px;
