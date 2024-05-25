@@ -299,10 +299,6 @@ main .banner {
   max-width: 1200px;
   margin: auto; }
 
-.forany {
-  max-width: 1200px;
-  margin: auto; }
-
 .my-carousel {
   max-width: 1200px;
   margin: auto; }
@@ -396,22 +392,23 @@ main section .carusel {
     min-width: 637px;
     font-family: 'robotoregular'; }
 
-main section .cards {
+.use .cards {
   max-width: 1200px;
   min-height: 729px;
   display: flex;
   justify-content: center; }
-  main section .cards .corporate {
+  .use .cards .corporate {
     min-width: 580px;
     min-height: 641px;
     display: flex;
-    background-image: url("../images/IMAGE(13).svg");
-    background-repeat: no-repeat;
+    background: url("/images/IMAGE(11).svg"), url("/images/IMAGE(13).svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0px 240px, 0 top;
     flex-direction: column;
     align-items: center;
     margin-right: 8px;
     margin-left: 16px; }
-    main section .cards .corporate h3 {
+    .use .cards .corporate h3 {
       font-weight: 400;
       font-size: 32px;
       line-height: 125%;
@@ -421,7 +418,7 @@ main section .cards {
       padding-top: 48px;
       margin-bottom: 10px;
       font-family: 'robotoregular'; }
-    main section .cards .corporate a {
+    .use .cards .corporate a {
       border: 1px solid #fff;
       border-radius: 10px;
       font-weight: 400;
@@ -435,19 +432,20 @@ main section .cards {
       text-decoration: none;
       font-family: 'robotoregular';
       margin-bottom: 24px; }
-    main section .cards .corporate img {
+    .use .cards .corporate img {
       min-width: 580px;
       min-height: 401px; }
-  main section .cards .global {
+  .use .cards .global {
     min-width: 580px;
     min-height: 641px;
     display: flex;
-    background-image: url("../images/IMAGE(10).svg");
-    background-repeat: no-repeat;
+    background-image: url("/images/IMAGE(12).svg"), url("/images/IMAGE(10).svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0px 240px, 0 top;
     flex-direction: column;
     align-items: center;
     margin-right: 16px; }
-    main section .cards .global h3 {
+    .use .cards .global h3 {
       font-weight: 400;
       font-size: 32px;
       line-height: 125%;
@@ -457,7 +455,7 @@ main section .cards {
       padding-top: 48px;
       margin-bottom: 10px;
       font-family: 'robotoregular'; }
-    main section .cards .global p {
+    .use .cards .global p {
       font-weight: 400;
       font-size: 16px;
       line-height: 150%;
@@ -466,7 +464,7 @@ main section .cards {
       color: #212121;
       font-family: 'robotoregular';
       margin-bottom: 22px; }
-    main section .cards .global a {
+    .use .cards .global a {
       font-weight: 400;
       font-size: 14px;
       line-height: 157%;
@@ -480,11 +478,11 @@ main section .cards {
       text-decoration: none;
       font-family: 'robotoregular';
       margin-bottom: 24px; }
-    main section .cards .global img {
+    .use .cards .global img {
       min-width: 580px;
       min-height: 401px; }
 
-main section .cards .corporate .meets {
+.use .cards .corporate .meets {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -495,12 +493,16 @@ main section .cards .corporate .meets {
   font-family: 'robotoregular';
   margin-bottom: 22px; }
 
+.forany {
+  background: #f9f9f9; }
+
 .flexible {
-  min-width: 1200px;
+  max-width: 1200px;
   min-height: 1033px;
   background: #f9f9f9;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: auto; }
   .flexible .limits {
     max-width: 920px;
     min-height: 252px;
@@ -879,124 +881,123 @@ main .see {
     margin-right: 48px; }
 
 footer {
-  max-width: 1200px;
-  min-height: 1196px;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  padding-top: 120px;
   background: #171717; }
-  footer .top_footer {
+  footer section {
+    max-width: 1200px;
+    min-height: 1196px;
     display: flex;
-    margin-bottom: 97px; }
-    footer .top_footer li {
-      list-style: none; }
-      footer .top_footer li a {
-        text-decoration: none; }
-  footer .logo {
-    margin-left: 48px; }
-  footer .product {
-    margin-left: 198px; }
-    footer .product h2 {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 150%;
-      letter-spacing: 0.02em;
-      color: #fff;
-      font-family: 'robotoregular';
-      margin-bottom: 7px; }
-    footer .product a {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 157%;
-      color: #bcbdbd;
-      font-family: 'robotoregular'; }
-    footer .product li {
-      margin-bottom: 8px; }
-  footer .company {
-    margin-left: 142px; }
-    footer .company h2 {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 150%;
-      letter-spacing: 0.02em;
-      color: #fff;
-      font-family: 'robotoregular';
-      margin-bottom: 7px; }
-    footer .company a {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 157%;
-      color: #bcbdbd;
-      font-family: 'robotoregular'; }
-    footer .company li {
-      margin-bottom: 8px; }
-  footer .resources {
-    margin-left: 203px; }
-    footer .resources h2 {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 150%;
-      letter-spacing: 0.02em;
-      color: #fff;
-      font-family: 'robotoregular';
-      margin-bottom: 7px; }
-    footer .resources a {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 157%;
-      color: #bcbdbd;
-      font-family: 'robotoregular'; }
-    footer .resources li {
-      margin-bottom: 8px; }
-
-footer .second_footer {
-  display: flex;
-  margin-left: 48px;
-  margin-bottom: 131px; }
-  footer .second_footer .link2 {
-    margin-left: 352px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 186px;
-    min-height: 24px; }
-    footer .second_footer .link2 .app {
+    flex-direction: column;
+    margin: auto;
+    padding-top: 120px; }
+    footer section .top_footer {
       display: flex;
-      margin-right: 24px; }
-    footer .second_footer .link2 .google {
-      display: flex; }
-  footer .second_footer .link {
-    justify-content: space-between;
-    align-items: center;
-    display: flex; }
-    footer .second_footer .link a {
-      margin-right: 24px; }
-      footer .second_footer .link a:last-of-type {
-        margin-right: 0px; }
-
-footer .bottom_footer {
-  display: flex;
-  margin-left: 48px;
-  flex-direction: column; }
-  footer .bottom_footer a {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 133%;
-    letter-spacing: 0.02em;
-    color: #bcbdbd;
-    font-family: 'robotoregular'; }
-  footer .bottom_footer p {
-    margin-bottom: 8px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 133%;
-    letter-spacing: 0.02em;
-    color: #bcbdbd;
-    font-family: 'robotoregular'; }
-    footer .bottom_footer p:last-of-type {
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 133%;
-      letter-spacing: 0.02em;
-      color: #fff; }
+      margin-bottom: 97px; }
+      footer section .top_footer li {
+        list-style: none; }
+        footer section .top_footer li a {
+          text-decoration: none; }
+    footer section .logo {
+      margin-left: 48px; }
+    footer section .product {
+      margin-left: 198px; }
+      footer section .product h2 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #fff;
+        font-family: 'robotoregular';
+        margin-bottom: 7px; }
+      footer section .product a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 157%;
+        color: #bcbdbd;
+        font-family: 'robotoregular'; }
+      footer section .product li {
+        margin-bottom: 8px; }
+    footer section .company {
+      margin-left: 142px; }
+      footer section .company h2 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #fff;
+        font-family: 'robotoregular';
+        margin-bottom: 7px; }
+      footer section .company a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 157%;
+        color: #bcbdbd;
+        font-family: 'robotoregular'; }
+      footer section .company li {
+        margin-bottom: 8px; }
+    footer section .resources {
+      margin-left: 203px; }
+      footer section .resources h2 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #fff;
+        font-family: 'robotoregular';
+        margin-bottom: 7px; }
+      footer section .resources a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 157%;
+        color: #bcbdbd;
+        font-family: 'robotoregular'; }
+      footer section .resources li {
+        margin-bottom: 8px; }
+    footer section .second_footer {
+      display: flex;
+      margin-left: 48px;
+      margin-bottom: 131px; }
+      footer section .second_footer .link2 {
+        margin-left: 352px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 186px;
+        min-height: 24px; }
+        footer section .second_footer .link2 .app {
+          display: flex;
+          margin-right: 24px; }
+        footer section .second_footer .link2 .google {
+          display: flex; }
+      footer section .second_footer .link {
+        justify-content: space-between;
+        align-items: center;
+        display: flex; }
+        footer section .second_footer .link a {
+          margin-right: 24px; }
+          footer section .second_footer .link a:last-of-type {
+            margin-right: 0px; }
+    footer section .bottom_footer {
+      display: flex;
+      margin-left: 48px;
+      flex-direction: column; }
+      footer section .bottom_footer a {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 133%;
+        letter-spacing: 0.02em;
+        color: #bcbdbd;
+        font-family: 'robotoregular'; }
+      footer section .bottom_footer p {
+        margin-bottom: 8px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 133%;
+        letter-spacing: 0.02em;
+        color: #bcbdbd;
+        font-family: 'robotoregular'; }
+        footer section .bottom_footer p:last-of-type {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 133%;
+          letter-spacing: 0.02em;
+          color: #fff; }

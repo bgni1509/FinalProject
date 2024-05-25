@@ -1,3 +1,8 @@
+@media only screen and (max-width: 1200px){
+    main .banner .brexfor{
+        padding-left: 20px;
+    }
+}
 @media only screen and (max-width: 992px){
     .about ul li .resources{
         margin-right: 28px;
@@ -12,7 +17,47 @@
     .about ul li:nth-child(3){
         min-width: 68px;
     }
+    main .banner{
+        justify-content: center;
+    }
+    .owl-nav .owl-next span{
+        right: 12px;
+    }
+    .owl-nav .owl-prev span{
+        left: 12px;
+    }
+    main .banner .brexfor{
+        align-items: center;
+        padding-right: inherit;
+        h3{
+            text-align: center;
+            margin-right: inherit;
+        }
+    }
+    main .banner .open{
+        min-width: 330px;
+    }
+    .solutions2{
+        min-width: inherit;
+    }
+    .use .cards{
+        width: 100%;
+        .corporate{
+            width: 50%;
+            min-width: inherit;
+            background-position: -50px 240px, 0 top;
+        }
+        .global{
+            width: 50%;
+            min-width: inherit;
+            background-position: -53px 240px, 0 top;
+
+        }
+    }
+
+
 }
+
 @media only screen and (max-width: 768px){
     .container{
         .logogo{
@@ -42,26 +87,75 @@
     .email .sign{
         padding-right: inherit;
     }
+    .use .cards{
+        .corporate{
+
+            background-position: -107px 240px, 0 top;
+        }
+        .global{
+
+            background-position: -103px 240px, 0 top;
+            p{
+                br{
+                    display: none;
+                }
+            }
+
+        }
+    }
 }
-@media only screen and (max-width: 540px){
-    .container{
+@media only screen and (max-width: 540px) {
+    .container {
         flex-direction: column;
         padding: 21px 29px 0 24px;
-        .logogo{
+
+        .logogo {
             margin-bottom: 20px;
         }
-        .email .open{
+
+        .email .open {
             padding-right: 26px;
         }
-        .email .sign{
+
+        .email .sign {
             padding-right: 26px;
         }
-        .about{
+
+        .about {
             margin-bottom: 10px;
+        }
+
+    }
+
+    .use .cards {
+        .corporate {
+
+            background-position: -165px 240px, 0 top;
         }
     }
 
+    main .banner .brexfor h4::after{
+        min-width: inherit;
+    }
+    main .banner .budgets{
+        transform: scale(0.8);
+    }
+    .solutions2{
+
+        max-width: 510px;
+        margin-left: 15px;
+    }
+    .solutions2 h3{
+        display: flex;
+        max-width: 510px;
+    }
+    .solutions2 p{
+        display: flex;
+        max-width: 510px;
+    }
+
 }
+
 @media only screen and (max-width: 320px){
     .container{
     .about{
@@ -74,7 +168,77 @@
         padding-right: 15px;
         padding-left: 15px;
     }
+
 }
+    main .banner .brexfor h3{
+        font-size: 35px;
+    }
+    main .banner .open .contact{
+        padding-right: 25px;
+        padding-left: 25px;
+        a{
+            width: inherit;
+        }
+    }
+    main .banner .budgets{
+        transform: scale(0.45);
+    }
+    main .banner .open .contact{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    main .banner .open .account{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    main .banner .open{
+        a{
+            width: inherit;
+        }
+
+    }
+    main .banner .brexfor h3{
+        min-width: 300px;
+    }
+    main .banner .brexfor{
+        padding-left: inherit;
+    }
+    main .banner .open{
+        min-width: 300px;
+        justify-content: space-around;
+    }
+    main .banner .enterprice{
+        max-width: 300px;
+    }
+    main .banner .startups{
+        max-width: 300px;
+    }
+    .solutions2{
+        max-width: 300px;
+        margin-left: 9px;
+    }
+    .solutions2 h3 {
+        max-width: 300px;
+    }
+    .solutions2 p {
+        min-width: 300px;
+    }
+    .use .cards .corporate{
+        min-width: 300px;
+        background-position: -140px 240px, 0 top;
+        margin-left: inherit;
+        margin-right: inherit;
+    }
+    .use .cards .global{
+        min-width: 300px;
+        margin-right: inherit;
+    }
+    .use .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
 @media only screen and (max-width: 280px){
     .container {
@@ -94,4 +258,64 @@
             padding-left: 15px;
         }
     }
+    main .banner .brexfor h3{
+        margin-bottom: inherit;
+        min-width: 250px;
+        font-size: 25px;
+    }
+    main .banner .open{
+        min-width: 250px;
+    }
+    main .banner .enterprice{
+        max-width: 250px;
+        text-align: center;
+        align-items: center;
+    }
+    main .banner .startups{
+        max-width: 250px;
+        text-align: center;
+        align-items: center;
+    }
+    main .banner .budgets{
+        transform: scale(0.4);
+    }
+    main section .carusel{
+        padding-top: inherit;
+    }
+    .owl-carousel .owl-stage-outer{
+        margin-bottom: 20px;
+    }
+    .owl-nav .owl-prev span{
+        top: 0;
+    }
+    .owl-nav .owl-next span{
+        top: 0;
+    }
+    .solutions2 p{
+        min-width: 250px;
+    }
+    .solutions2{
+        margin-left: inherit;
+    }
+    .use .cards .corporate{
+        min-width: 280px;
+        background-position: -150px 240px, 0 top;
+        h3{
+            font-size: 25px;
+        }
+        p{
+            font-size: 10px;
+        }
+
+    }
+    .use .cards .global{
+        min-width: 280px;
+        h3{
+            font-size: 25px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
 }
+

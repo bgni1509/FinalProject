@@ -408,10 +408,7 @@ main {
   max-width: 1200px;
   margin: auto;
 }
-.forany{
-  max-width: 1200px;
-  margin: auto;
-}
+
 .my-carousel{
   max-width: 1200px;
   margin: auto;
@@ -534,7 +531,7 @@ main section .carusel{
     font-family: 'robotoregular';
   }
 }
-main section .cards{
+.use .cards{
   max-width: 1200px;
   min-height: 729px;
   display: flex;
@@ -544,8 +541,9 @@ main section .cards{
     min-width: 580px;
     min-height: 641px;
     display: flex;
-    background-image: url("../images/IMAGE(13).svg");
-    background-repeat: no-repeat;
+    background: url("/images/IMAGE(11).svg"), url("/images/IMAGE(13).svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0px 240px, 0 top;
     flex-direction: column;
     align-items: center;
     margin-right: 8px;
@@ -589,8 +587,9 @@ main section .cards{
     min-width: 580px;
     min-height: 641px;
     display: flex;
-    background-image: url("../images/IMAGE(10).svg");
-    background-repeat: no-repeat;
+    background-image: url("/images/IMAGE(12).svg"), url("/images/IMAGE(10).svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0px 240px, 0 top;
     flex-direction: column;
     align-items: center;
     margin-right: 16px;
@@ -637,7 +636,7 @@ main section .cards{
   }
 
 }
-main section .cards .corporate .meets{
+.use .cards .corporate .meets{
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -648,12 +647,16 @@ main section .cards .corporate .meets{
   font-family: 'robotoregular';
   margin-bottom: 22px;
 }
+.forany{
+  background: #f9f9f9;
+}
 .flexible{
-  min-width: 1200px;
+  max-width: 1200px;
   min-height: 1033px;
   background: #f9f9f9;
   display: flex;
   flex-direction: column;
+  margin: auto;
   .limits{
     max-width: 920px;
     min-height: 252px;
@@ -1111,156 +1114,184 @@ main .see{
 
 }
 footer{
-  max-width: 1200px;
-  min-height: 1196px;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  padding-top: 120px;
   background: #171717;
-  .top_footer{
+  section {
+    max-width: 1200px;
+    min-height: 1196px;
     display: flex;
-    margin-bottom: 97px;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 120px;
 
-    li{
-      list-style: none;
-      a{
+    .top_footer {
+      display: flex;
+      margin-bottom: 97px;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .logo {
+      margin-left: 48px;
+    }
+
+    .product {
+      margin-left: 198px;
+
+      h2 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #fff;
+        font-family: 'robotoregular';
+        margin-bottom: 7px;
+      }
+
+      a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 157%;
+        color: #bcbdbd;
+        font-family: 'robotoregular';
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+    }
+
+    .company {
+      margin-left: 142px;
+
+      h2 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #fff;
+        font-family: 'robotoregular';
+        margin-bottom: 7px;
+      }
+
+      a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 157%;
+        color: #bcbdbd;
+        font-family: 'robotoregular';
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+    }
+
+    .resources {
+      margin-left: 203px;
+
+      h2 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #fff;
+        font-family: 'robotoregular';
+        margin-bottom: 7px;
+      }
+
+      a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 157%;
+        color: #bcbdbd;
+        font-family: 'robotoregular';
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+    }
+
+    .second_footer {
+      display: flex;
+      margin-left: 48px;
+      margin-bottom: 131px;
+
+      .link2 {
+        margin-left: 352px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 186px;
+        min-height: 24px;
+
+        .app {
+          display: flex;
+          margin-right: 24px;
+        }
+
+        .google {
+          display: flex;
+        }
+      }
+
+      .link {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+
+        a {
+          margin-right: 24px;
+
+          &:last-of-type {
+            margin-right: 0px;
+          }
+        }
+
+      }
+    }
+
+    .bottom_footer {
+      display: flex;
+      margin-left: 48px;
+      flex-direction: column;
+
+      a {
         text-decoration: none;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 133%;
+        letter-spacing: 0.02em;
+        color: #bcbdbd;
+        font-family: 'robotoregular';
+      }
+
+      p {
+        margin-bottom: 8px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 133%;
+        letter-spacing: 0.02em;
+        color: #bcbdbd;
+        font-family: 'robotoregular';
+
+        &:last-of-type {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 133%;
+          letter-spacing: 0.02em;
+          color: #fff;
+        }
       }
     }
   }
-  .logo{
-    margin-left: 48px;
-  }
-  .product{
-    margin-left: 198px;
-    h2{
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 150%;
-      letter-spacing: 0.02em;
-      color: #fff;
-      font-family: 'robotoregular';
-      margin-bottom: 7px;
-    }
-    a{
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 157%;
-      color: #bcbdbd;
-      font-family: 'robotoregular';
-    }
-    li{
-      margin-bottom: 8px;
-    }
-  }
-  .company{
-    margin-left: 142px;
-    h2{
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 150%;
-      letter-spacing: 0.02em;
-      color: #fff;
-      font-family: 'robotoregular';
-      margin-bottom: 7px;
-    }
-    a{
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 157%;
-      color: #bcbdbd;
-      font-family: 'robotoregular';
-    }
-    li{
-      margin-bottom: 8px;
-    }
-  }
-  .resources{
-    margin-left: 203px;
-    h2{
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 150%;
-      letter-spacing: 0.02em;
-      color: #fff;
-      font-family: 'robotoregular';
-      margin-bottom: 7px;
-    }
-    a{
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 157%;
-      color: #bcbdbd;
-      font-family: 'robotoregular';
-    }
-    li{
-      margin-bottom: 8px;
-    }
-  }
 }
-footer .second_footer{
-  display: flex;
-  margin-left: 48px;
-  margin-bottom: 131px;
-  .link2{
-    margin-left: 352px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 186px;
-    min-height: 24px;
-    .app{
-      display: flex;
-      margin-right: 24px;
-    }
-    .google{
-      display: flex;
-    }
-  }
-  .link{
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
 
-    a{
-      margin-right: 24px;
-      &:last-of-type{
-        margin-right: 0px;
-      }
-    }
-
-  }
-}
-footer .bottom_footer{
-  display: flex;
-  margin-left: 48px;
-  flex-direction: column;
-  a{
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 133%;
-    letter-spacing: 0.02em;
-    color: #bcbdbd;
-    font-family: 'robotoregular';
-  }
-  p{
-    margin-bottom: 8px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 133%;
-    letter-spacing: 0.02em;
-    color: #bcbdbd;
-    font-family: 'robotoregular';
-    &:last-of-type{
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 133%;
-      letter-spacing: 0.02em;
-      color: #fff;
-    }
-  }
-}
 
 
 
