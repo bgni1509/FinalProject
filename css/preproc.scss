@@ -578,7 +578,7 @@ main section .carusel{
     min-width: 580px;
     min-height: 641px;
     display: flex;
-    background-image: url("/images/IMAGE(12).svg"), url("/images/IMAGE(10).svg");
+    background-image: url("../images/IMAGE(12).svg"), url("../images/IMAGE(10).svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 0px 240px, 0 top;
     flex-direction: column;
@@ -649,7 +649,7 @@ main section .carusel{
   display: flex;
   flex-direction: column;
   margin: auto;
-  background-image: url("/images/IMAGE(14).svg");
+  background-image: url("../images/IMAGE(14).svg");
   background-repeat: no-repeat;
   background-position: 48px 332px;
   background-size: 92%;
@@ -1034,7 +1034,7 @@ main section .carusel{
   }
 }
 .see{
-  background-image: url("/images/IMAGE(24).svg");
+  background-image: url("../images/IMAGE(24).svg");
   .canfor{
     max-width: 1200px;
     margin: auto;
