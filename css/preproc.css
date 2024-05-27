@@ -111,15 +111,18 @@
         max-width: 82px;
         margin-right: 29px; }
         .about ul li .solutions img {
-          margin-left: 8px; }
+          margin-left: 8px;
+          padding-top: 2px; }
       .about ul li .products {
         margin-right: 29px; }
         .about ul li .products img {
-          margin-left: 8px; }
+          margin-left: 8px;
+          padding-top: 2px; }
       .about ul li .resources {
         margin-right: 124px; }
         .about ul li .resources img {
-          margin-left: 8px; }
+          margin-left: 9px;
+          padding-top: 2px; }
 
 .email {
   display: flex;
