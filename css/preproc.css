@@ -109,20 +109,26 @@
         display: flex; }
       .about ul li .solutions {
         max-width: 82px;
-        margin-right: 29px; }
+        margin-right: 29px;
+        align-items: center; }
         .about ul li .solutions img {
           margin-left: 8px;
-          padding-top: 2px; }
+          width: 11px;
+          height: 7px; }
       .about ul li .products {
-        margin-right: 29px; }
+        margin-right: 29px;
+        align-items: center; }
         .about ul li .products img {
           margin-left: 8px;
-          padding-top: 2px; }
+          width: 11px;
+          height: 7px; }
       .about ul li .resources {
-        margin-right: 124px; }
+        margin-right: 124px;
+        align-items: center; }
         .about ul li .resources img {
           margin-left: 9px;
-          padding-top: 2px; }
+          width: 11px;
+          height: 7px; }
 
 .email {
   display: flex;
