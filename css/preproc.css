@@ -389,7 +389,7 @@ main section .carusel {
     min-width: 580px;
     min-height: 641px;
     display: flex;
-    background: url("/images/IMAGE(11).svg"), url("/images/IMAGE(13).svg");
+    background: url("../images/IMAGE(11).svg"), url("../images/IMAGE(13).svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 0px 240px, 0 top;
     flex-direction: column;
